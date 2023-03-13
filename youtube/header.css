@@ -1,0 +1,140 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0 ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(241, 241, 241);
+    border-width: 1px;
+    z-index: 10;
+}
+.start{
+    display: flex;
+    align-items: center;
+    
+
+}
+.middle{
+    flex: 1;
+    max-width: 450px;
+    margin-left: 30px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    
+
+}
+.end{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+    flex-shrink: 0;
+    
+
+}
+.menu{
+    height: 25px;  
+    margin-left: 20px;
+}
+
+.logo{
+    height: 25px;
+    margin-left: 15px;
+}
+.search{
+    height: 40px;
+    border-radius: 20px;
+    flex: 1;
+    padding-left: 15px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 1px 1px 2px rgb(0, 0,0,0.15);
+    width: 0;
+}
+.search-icon{
+    height: 40px;
+    width: 60px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-width: 1px;
+    background: rgb(245, 245, 245);
+    cursor: pointer;
+    margin-left: -40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.search-icon, .voice{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tooltip{
+    background-color: rgb(180, 180, 180);
+    position: absolute;
+    bottom: -30px;
+    padding: 4px 5px;
+    
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity,0.10s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-icon:hover .tooltip , .voice:hover .tooltip{
+    opacity: 1;
+}
+.searchpic{
+    background: rgb(245, 245, 245);
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+.voice{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    padding-top: 5px;
+    border-radius: 20px;
+    border-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+.upload{
+    height: 25px;
+}
+.apps{
+    height: 25px;
+
+}
+.notifications{
+    height: 25px;
+   
+
+}
+.notifications-icon{
+    position: relative;
+}
+.not-number{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+   background-color: rgb(197, 41, 41);
+   color: white;
+   border-radius: 10px;
+   font-size: 12px;
+   padding: 2px 4px;
+}
+.self{
+    height: 27px;
+    border-radius: 13px;
+
+}
